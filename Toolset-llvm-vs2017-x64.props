@@ -35,10 +35,11 @@
     <LLVMInstallDir>$(Registry:HKEY_LOCAL_MACHINE\SOFTWARE\LLVM\LLVM)</LLVMInstallDir>
     <LLVMInstallDir Condition="'$(LLVMInstallDir)' == ''">$(Registry:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\LLVM\LLVM)</LLVMInstallDir>
     <ExecutablePath>$(LLVMInstallDir)\msbuild-bin;$(ExecutablePath)</ExecutablePath>
-    <LibraryPath>$(LLVMInstallDir)\lib\clang\6.0.0\lib\windows;$(LibraryPath)</LibraryPath>                      
+    <IncludePath>$(LLVMInstallDir)\lib\clang\6.0.0\include</IncludePath>
+    <LibraryPath>$(LLVMInstallDir)\lib;$(LLVMInstallDir)\lib\clang\6.0.0\lib\windows;$(LibraryPath)</LibraryPath>
     <VCToolArchitecture>Native64Bit</VCToolArchitecture>
   </PropertyGroup>
-
+$(LLVMInstallDir)\lib\clang\6.0.0\lib;
   <ItemDefinitionGroup>
     <ClCompile>
       <!-- Set the value of _MSC_VER to claim for compatibility -->
