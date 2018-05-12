@@ -1,6 +1,6 @@
-# LLVM 6.0.0 Visual Studio 2017 Integration
+ # LLVM 6.0.0 Visual Studio 2017 Integration
 
-This is a forked version of llvm-vs2017-integration which is updated for LLVM 6.0.0.
+This is a forked version of llvm-vs2017-integration which is updated for LLVM 6.0.0 and provides better integration by providing include and library paths of LLVM/clang.
 
 Thanks to Royi for realizing that the library paths should be updated from `5.0` to `6.0.0`.
 
