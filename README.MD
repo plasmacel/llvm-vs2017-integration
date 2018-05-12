@@ -1,3 +1,7 @@
+This is a forked version of llvm-vs2017-integration which is updated for LLVM 6.0.0.
+
+Thanks for Royi for realizing that the library paths should be updated from `5.0` to `6.0.0`.
+
 # LLVM Visual Studio 2017 Integration
 
 ### Automatic Installation
