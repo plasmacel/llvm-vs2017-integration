@@ -39,7 +39,7 @@
     <LibraryPath>$(LLVMInstallDir)\lib;$(LLVMInstallDir)\lib\clang\6.0.0\lib\windows;$(LibraryPath)</LibraryPath>
     <VCToolArchitecture>Native64Bit</VCToolArchitecture>
   </PropertyGroup>
-$(LLVMInstallDir)\lib\clang\6.0.0\lib;
+
   <ItemDefinitionGroup>
     <ClCompile>
       <!-- Set the value of _MSC_VER to claim for compatibility -->
