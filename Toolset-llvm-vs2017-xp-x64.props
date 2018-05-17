@@ -1,4 +1,4 @@
-﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <Import Project="$(MSBuildThisFileDirectory)ImportBefore\*.props" Condition="Exists('$(MSBuildThisFileDirectory)ImportBefore')" />
 
   <PropertyGroup>
@@ -54,8 +54,8 @@
   <PropertyGroup>
     <LLVMInstallDir>$(Registry:HKEY_LOCAL_MACHINE\SOFTWARE\LLVM\LLVM)</LLVMInstallDir>
     <LLVMInstallDir Condition="'$(LLVMInstallDir)' == ''">$(Registry:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\LLVM\LLVM)</LLVMInstallDir>
-    <ExecutablePath>$(LLVMInstallDir)\msbuild-bin;$(ExecutablePath)</ExecutablePath>
-    <IncludePath>$(LLVMInstallDir)\lib\clang\6.0.0\include</IncludePath>
+    <ExecutablePath>$(LLVMInstallDir)\bin;$(LLVMInstallDir)\msbuild-bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(LLVMInstallDir)\lib\clang\6.0.0\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(LLVMInstallDir)\lib;$(LLVMInstallDir)\lib\clang\6.0.0\lib\windows;$(LibraryPath)</LibraryPath>
     <VCToolArchitecture>Native64Bit</VCToolArchitecture>
   </PropertyGroup>
