@@ -10,7 +10,7 @@ Open a command prompt with Administrator rights (DO NOT OPEN AutoSetup.bat with 
 
 Go to the folder where AutoSetup.bat exists and type "AutoSetup"
 
-### Manual Installation (If Automatic dosen't work)
+### Manual Installation (If Automatic doesn't work)
 
 Go to "[Your Visual Studio Installation Directory]\Common7\IDE\VC\VCTargets\Platforms"
 
