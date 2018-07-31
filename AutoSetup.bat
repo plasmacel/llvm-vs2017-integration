@@ -18,6 +18,7 @@ for /f "tokens=2,*" %%a in ('reg query %VS_REGKEY% /v %VS_REGVAL% ^| findstr %VS
 
 if not defined VS_DIR (echo Cannot find Visual Studio 2017 directory! & exit /b 1)
 
+pushd "%~dp0"
 set VS_PROOT_DIR=%VS_DIR%\Common7\IDE\VC\VCTargets\Platforms
 
 if not exist "%VS_PROOT_DIR%\Win32\PlatformToolsets\LLVM-vs2017" (mkdir "%VS_PROOT_DIR%\Win32\PlatformToolsets\LLVM-vs2017")
@@ -41,4 +42,5 @@ goto done
 
 :done
 echo Setup OK!
+popd
 pause
